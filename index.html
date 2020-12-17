@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+  <title>@marcellabarros</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <!-- div container -->
+    <div class="header">
+      <!-- <a href="#default" class="logo">
+        <img alt="logo-marcella-barros" src="./images/logome.png" width="200px">
+      </a> -->
+
+      <h2> MB <i class="fas fa-mug-hot"></i> </h2>
+
+      <nav class="nav-bar">
+        <a class="tab active" href="index.html">home.</a>
+        <a class="tab" href="about_me.html">about me.</a>
+        <a class="tab" href="resume.html">resume.</a>
+        <a class="tab" href="allabouthebeer.html">all about the beer.</a>
+      </nav>
+    </div>
+
+    <div class="pic-and-text">
+      <div class="left">
+        <img src="images/polaroid_one.png" alt="Marcella Barros" id="img-profile">
+      </div>
+
+      <div class="right">
+        <h1>marcella barros</h1>
+        <h2>web developer | react | typescript | javascript | node.js</h2>
+        <div class="text">
+          <p>
+            I'm passionate about logic and I like to think in an unusual way to solve problems.
+            So, I decided to work with something that moves me, and that's technology!
+            Nowadays, I'm a Web Developer but I have 5+ years in the IT area, and I hold a degree in Information
+            Systems.
+            <br /> <br />
+            Besides that, I love to travel and play games (specially boardgames).
+            I'm crazy about tattoos and piercings and, sometimes, I risk singing something (but as a singer, I'm an
+            excellent programmer).
+            <br /> <br />
+            If you wanna talk about women in tech, games, beer, coffee or anything about technology,
+            <strong>contact me right now</strong>!
+          </p>
+        </div>
+
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/marcellabarros/" target="_blank" alt="linkedin" title="linkedin">
+            <i class="fab fa-linkedin-in" style="color:black"> </i>
+          </a>
+
+          <a href="https://github.com/marcellabarros" target="_blank" alt="github" title="github">
+            <i class="fab fa-github" style="color:black"></i>
+          </a>
+
+          <a href="mailto:marcellasouzabarros@gmail.com.com" target="_blank" alt="e-mail" title="e-mail">
+            <i class="fas fa-envelope" style="color:black"></i>
+          </a>
+
+          <a href="" target="_blank" alt="all-about-the-beer" title="all-about-the-beer">
+            <i class="fas fa-beer" style="color:black"></i>
+          </a>
+
+          <a href="" target="_blank" alt="download-my-cv-here" title="download-my-cv-here">
+            <i class="fas fa-file-download" style="color:black"> </i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      marcellasouzabarros@gmail.com
+    </div>
+  </div> <!-- enddiv container -->
+
+  <!-- verify active tab -->
+  <script>
+    var header = document.getElementById("nav-bar");
+    var tabs = header.getElementsByClassName("tab");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <!-- end verify active tab -->
+</body>
+
+</html>
