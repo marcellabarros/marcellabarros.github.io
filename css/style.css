@@ -37,7 +37,7 @@ a {
 }
 
 @keyframes active {
- 0%{color: rgb(166, 94, 255);}
+ 	0%{color: rgb(166, 94, 255);}
   50%{color: rgb(46, 250, 216);}
   100%{color: rgb(230, 132, 255);}
 }  
@@ -46,17 +46,22 @@ a {
 	padding-top: 100px;
 	display: flex;
 	overflow: hidden;
-	justify-content: space-evenly;
+	justify-content: center;
+}
+
+.right{
+	padding-left: 70px;
 }
 
 img#img-profile {
-    box-shadow: 5px -4px 3.36px 0.14px rgba(0, 0, 0, 0.14);
-		transition: 2s;
+	max-width: 300px;
+	box-shadow: 5px -4px 3.36px 0.14px rgba(0, 0, 0, 0.14);
+	transition: 1s;
 }
 
 img#img-profile:hover {
   box-shadow: -5px 4px 3.36px 0.14px rgba(0, 0, 0, 0.14);
- 	transition: 2s;
+ 	transition: 1s;
 	transform: rotate(-5deg)
 }
 
@@ -95,25 +100,51 @@ img#img-profile:hover {
 	box-shadow: 5px -2px 5px 3px rgba(0, 0, 0, 0.14)
 }
 
-.icons{
-	font-size: 30px;	
-  display: flex;
-  justify-content: space-evenly;
-	padding: 50px;
-}
-
 .text{
 	max-width: fit-content;
   text-align: justify;
 	letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 23px;
 }
 
-.footer{
-	padding-top: 115px;
-  text-align: center;
+.footer{	
+	letter-spacing: 30px;
+	padding-bottom: 100px;
+	text-align: center;
+	font-size: 35px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;	
 }
 
-strong {
-  color: #5dc1b9;
+strong > a {
+	color: #5dc1b9;
+}
+
+.about-me {
+	padding-left: 300px;
+	padding-top: 100px;
+	justify-content: center;
+	padding-right: 300px;
+}
+
+p > a {
+	color: #5dc1b9;
+	text-decoration: none;
+}
+
+p > span {
+	color: #5dc1b9;
+	text-decoration: none;
+	animation: rainbow 5s infinite;	
+}
+
+@keyframes rainbow {
+	0%{color: #ff9acb;}
+	20%{color:#fac146;}
+	40%{color: #d3ca29;}
+	60%{color: #87ca5a;}
+	80%{color: #2fadbe;}
+	100%{color: #ff9acb;}
 }
