@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+  <title>@marcellabarros</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <!-- div container -->
+    <div class="header">
+      <a href="index.html" class="logo">
+        <img alt="logo-marcella-barros" src="./images/logo-mb.png" width="150px">
+      </a>
+      <nav class="nav-bar">
+        <a class="tab" href="index.html">home.</a>
+        <a class="tab" href="about_me.html">about me.</a>
+        <a class="tab active" href="resume.html">resume.</a>
+        <a class="tab" href="women_in-tech.html">women in tech.</a>
+        <a class="tab" href="allabouthebeer.html">all about the beer.
+          <i class="fas fa-beer" style="color:black"></i></a>
+      </nav>
+    </div>
+
+    <div class="about-me">
+      <h1>marcella barros</h1>
+      <h2>resume.</h2>
+      <!-- div timeline -->
+      <div class="challenge">
+        <h2>
+          2021 - waiting for the next challenge
+          <img id="star" alt="star" src="https://media.giphy.com/media/WrJVjiuw2NndlkNnGZ/giphy.gif" width="40px">
+        </h2>
+        <p>
+          pensando se coloco algum texto aqui pensando se coloco algum texto aqui
+          pensando se coloco algum texto aqui pensando se coloco algum texto aqui
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>2020 - Web Developer</h2>
+            <p>
+              Responsible for developing web applications using React JS.
+              The work is fully remote, so I can perform my tasks with minimal monitoring.
+            </p>
+
+            <strong>toolts:</strong> github, jira, miro, zeplin and figma.
+            <br /><br />
+            <strong>skills:</strong> react.js, redux, typescript, javascript, styled components,
+            html & css, node.js, jest.js and SQL.
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2019 - Frontend Developer</h2>
+            <p>
+              Responsible for create new features and maintain (editing and code refactoring)
+              web pagesfor the logistical tracking systems.
+            </p>
+
+            <strong>toolts:</strong> github and monday.
+            <br /><br />
+            <strong>skills:</strong> react.js, javascript, html & css.
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2018 - Technical Implementation</h2>
+            <p>
+              Responsible for create, configurate and maintenance of customer's blogs using WordPress.
+              I've also acquired a very close experience with Content Marketing.
+            </p>
+
+            <strong>toolts:</strong> zendesk and intercom.
+            <br /><br />
+            <strong>skills:</strong> html & css, hosting provider configurations, process documentation,
+            and projects scalability.
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2017 - Technical Support</h2>
+            <p>
+              I worked as technical support to the user and support to the company's ERP system
+              for both, hardware and software.
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2016 - Robotics (U.E)</h2>
+            <p>
+              The University Extension (U.E) project offers an opportunity for children and
+              teenagers to learn while playing with the robots blockline programming.
+              <br /><br />
+              During weekly classes, students assemble and program lego robots to learn physics,
+              mathematics and everyday issues in practice. Teaching people of different ages was an
+              incredible task of mutual learning. ♥
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--end div timeline -->
+
+    </div>
+  </div>
+  <div class="footer">
+    <a href="https://www.linkedin.com/in/marcellabarros/" target="_blank" alt="linkedin" title="linkedin">
+      <i class="fab fa-linkedin-in" style="color:black"> </i>
+    </a>
+
+    <a href="https://github.com/marcellabarros" target="_blank" alt="github" title="github">
+      <i class="fab fa-github" style="color:black"></i>
+    </a>
+
+    <a href="mailto:marcellasouzabarros@gmail.com" target="_blank" alt="e-mail" title="e-mail">
+      <i class="fas fa-envelope" style="color:black"></i>
+    </a>
+
+    <a href="" target="_blank" alt="download-my-cv-here" title="download-my-cv-here">
+      <i class="fas fa-file-download" style="color:black"> </i>
+    </a>
+  </div>
+  </div> <!-- enddiv container -->
+
+  <!-- verify active tab -->
+  <script>
+    var header = document.getElementById("nav-bar");
+    var tabs = header.getElementsByClassName("tab");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <!-- end verify active tab -->
+</body>
+
+</html>
