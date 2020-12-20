@@ -125,11 +125,28 @@ strong > a {
 	color: #5dc1b9;
 }
 
-.about-me {
+.about-me, .resume, .beer{
 	padding-left: 300px;
 	padding-top: 100px;
 	justify-content: center;
 	padding-right: 300px;
+}
+
+.women{	
+	padding-top: 100px;
+	justify-content: center;
+}
+
+img#gender {
+  padding-left: 50px;
+}
+
+.text-and-gif{
+	display: flex;
+}
+
+.wait-for-it{
+	text-align: center;
 }
 
 p > a {

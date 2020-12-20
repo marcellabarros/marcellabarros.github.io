@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+  <title>@marcellabarros</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <!-- div container -->
+    <div class="header">
+      <a href="index.html" class="logo">
+        <img alt="logo-marcella-barros" src="./images/logo-mb.png" width="100px">
+      </a>
+      <nav class="nav-bar">
+        <a class="tab" href="index.html">home.</a>
+        <a class="tab" href="about_me.html">about me.</a>
+        <a class="tab" href="resume.html">resume.</a>
+        <a class="tab active" href="women_in_tech.html">women in tech.</a>
+        <a class="tab" href="all_about_the_beer.html">all about the beer.
+          <i class="fas fa-beer" style="color:black"></i></a>
+      </nav>
+    </div>
+
+    <div class="women">
+      <h1>marcella barros</h1>
+      <h2>women in tech.</h2>
+      <div class="text-and-gif">
+        <div class="text">
+          <p>
+            Diversity and inclusion is a topic that has always interested me, and,
+            as I grew up, I became aware of the importance of this subject.
+            I had the privilege of being raised by a family that always encouraged me ♥,
+            and I was always able to play with whatever I wanted, regardless of my gender.
+            <br /> <br />
+            When I got to college, I started to face the discrimination
+            that many other girls and women face: being a woman in a technology area.
+            So, I thought <span>"what can I do to change this?"</span> and that's how it all started!
+            <br /> <br />
+            I discovered several projects in Brazil and around the world, which encourage
+            the participation of women in technology and I knew I had to be part of it! I started
+            being part of many groups of women in technology, going to meetings, and helping other
+            women through these groups. But that alone was not enough!
+            The inclusion of women and other minorities in technology <b>needs to be done together</b>,
+            and I realized that as much as many institutions wanted to help, they did not know how.
+            <br /> <br />
+            Then I decided to do my 'final paper college' about women in tech and conducted a study
+            on the lack of female visibility in the Brazilian technology market. As a result, proposals
+            were made on how to make the IT market more inclusive and equal for women and other minorities.
+            <br /> <br />
+            At the moment, I'm trying to create a booklet with the proposals and soon I'll post it here. :)
+            <br /> <br />
+            gif by <a href="https://giphy.com/libbyvanderploeg" target="_blank">@libbyvanderploeg</a>
+          </p>
+        </div>
+        <div class="gif-gender">
+          <img id="gender" alt="gender" src="https://media.giphy.com/media/26gs7m3jLKEAY0shO/giphy.gif">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a href="https://www.linkedin.com/in/marcellabarros/" target="_blank" alt="linkedin" title="linkedin">
+      <i class="fab fa-linkedin-in" style="color:black"> </i>
+    </a>
+
+    <a href="https://github.com/marcellabarros" target="_blank" alt="github" title="github">
+      <i class="fab fa-github" style="color:black"></i>
+    </a>
+
+    <a href="mailto:marcellasouzabarros@gmail.com" target="_blank" alt="e-mail" title="e-mail">
+      <i class="fas fa-envelope" style="color:black"></i>
+    </a>
+
+    <a href="" target="_blank" alt="download-my-cv-here" title="download-my-cv-here">
+      <i class="fas fa-file-download" style="color:black"> </i>
+    </a>
+  </div>
+  </div> <!-- enddiv container -->
+
+  <!-- verify active tab -->
+  <script>
+    var header = document.getElementById("nav-bar");
+    var tabs = header.getElementsByClassName("tab");
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+  <!-- end verify active tab -->
+</body>
+
+</html>
