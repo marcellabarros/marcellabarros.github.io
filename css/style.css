@@ -142,6 +142,7 @@ strong > a {
 .women{	
 	padding-top: 100px;
 	justify-content: center;
+	padding-bottom: 100px;
 }
 
 img#gender {
@@ -149,7 +150,7 @@ img#gender {
 }
 
 .text-and-gif{
-	display: flex;
+	display: flex;	
 }
 
 .wait-for-it{
@@ -244,3 +245,9 @@ left: 50%;
 left: -15px;
 }
 /* end timeline css */
+
+@media screen and (max-width: 700px) {
+	img#gender {
+    display: none;
+	}
+}
