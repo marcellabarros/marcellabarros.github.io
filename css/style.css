@@ -160,8 +160,7 @@ img#gender {
 } not decided yet xD*/
 
 .text-and-gif {
-  width: min-content;
-  display: -webkit-inline-box;
+  display: flex;
 }
 
 .wait-for-it{
