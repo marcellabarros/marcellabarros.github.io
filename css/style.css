@@ -44,6 +44,7 @@ a {
 
 .pic-and-text {
 	padding-top: 100px;
+	padding-bottom: 100px;
 	display: flex;
 	overflow: hidden;
 	justify-content: center;
@@ -132,11 +133,16 @@ strong > a {
 	color: #5dc1b9;
 }
 
-.about-me, .resume, .beer{
-	padding-left: 300px;
+.about-me, .beer{
+	padding: 100px;
+	justify-content: center;
+}
+
+.resume{
+	padding-left: 90px;
 	padding-top: 100px;
 	justify-content: center;
-	padding-right: 300px;
+	padding-right: 90px;
 }
 
 .women{	
@@ -149,8 +155,13 @@ img#gender {
 	padding-left: 50px;
 }
 
-.text-and-gif{
-	display: flex;	
+/* .gif-gender {
+	margin: auto;
+} not decided yet xD*/
+
+.text-and-gif {
+  width: min-content;
+  display: -webkit-inline-box;
 }
 
 .wait-for-it{
