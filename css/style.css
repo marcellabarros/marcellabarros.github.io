@@ -1,14 +1,61 @@
-html{
-	padding: 10px 200px 40px 200px;
-}
-  
+/* ----------mobile----------*/
+@media screen and (max-width: 600px) {
+	.header {
+		padding-left: 10px !important;
+    display: inline-grid !important;
+    justify-content: unset !important;
+	}
+
+	.nav-bar {
+		display: grid !important;
+	}
+
+	.nav-bar a {
+		padding: 0.5em !important;
+	}
+
+	.pic-and-text {
+		padding: 0 0 50px 0 !important;
+	}
+
+	.img-left{
+		display: none;
+	}
+
+	.text-and-gif {
+    width: auto !important;
+    margin: auto !important;
+		display: unset !important;
+	}
+
+	img#gender {
+    padding-left: 0px !important;
+    margin: auto;
+    max-width: 100%;
+		display: block;
+	}
+
+	.right, .about-me, .beer, .resume , .women , .beer, .text-and-gif {
+		padding: 15px 20px 100px 20px !important;
+	}
+
+	.footer {
+    letter-spacing: 15px !important;
+	}
+
+	h2 {
+    font-size: 18px !important;
+	}
+}/* ----------end mobile----------*/
+
+/* ----------web page----------*/
 body {
-	background-size: cover;
 	font-family: 'ABeeZee', sans-serif;
-	font-weight: 300; 
+	font-weight: 300;
 }
 
-.header {
+.header {	
+  padding: 10px 100px 0px 100px;
 	display: flex;
 	overflow: hidden;
 	justify-content: space-between;
@@ -43,8 +90,7 @@ a {
 }  
 
 .pic-and-text {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 100px 200px 100px 200px;
 	display: flex;
 	overflow: hidden;
 	justify-content: center;
@@ -76,36 +122,6 @@ img#img-profile:hover {
 .btn-download {
 	text-align: center;
 	padding: 15px;
-}
-
-.button-3d {
-	position:relative;
-	width: auto;
-	color:#000;
-	text-decoration:none;
-	text-shadow: -1px -1px #5dc1b9;
-	border-radius:5px;
-	background:#46b3a9;
-	text-align:center;
-	font-size: 1.0em;
-	padding:16px 18px 14px;
-}
-
-.button-3d:hover {
-	position:relative;
-	width: auto;
-	color:#fff;
-	text-decoration:none;
-	text-shadow: 1px 1px #333;
-	border-radius:5px;
-	background:#317e77;
-	text-align:center;
-	font-size: 1.0em;
-	padding:16px 18px 14px;
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
-	transition: all 0.1s;
-	box-shadow: 5px -2px 5px 3px rgba(0, 0, 0, 0.14)
 }
 
 .text{
@@ -146,22 +162,19 @@ strong > a {
 }
 
 .women{	
-	padding-top: 100px;
+	padding: 100px;
 	justify-content: center;
-	padding-bottom: 100px;
 }
 
 img#gender {
 	padding-left: 50px;
 }
 
-/* .gif-gender {
-	margin: auto;
-} not decided yet xD*/
-
 .text-and-gif {
-  width: min-content;
-  display: -webkit-inline-box;
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	margin: auto;
 }
 
 .wait-for-it{
@@ -188,14 +201,12 @@ p > span {
 }
 
 /* timeline css */
-/* vertical ruler */
 .timeline {
 	position: relative;
 	margin: 0 auto;
 	padding-bottom: 100px;	
 }
 
-/* vertical ruler */
 .timeline::after {
 	content: '';
 	position: absolute;
@@ -206,21 +217,19 @@ p > span {
 	left: 50%;
 }
 
-/* title and circle */
 .content {
 	padding-top: 1px;
 	text-align: justify;
 	padding-right: 50px;
 }
 
-/* container around content */
 .container {
 	position: relative;
 	width: 50%;
 }
 
-/* circles */
 .container::after {
+	/* circles */
 	content: '';
 	position: absolute;
 	width: 25px;
@@ -241,24 +250,16 @@ p > span {
 	text-align: center;
 }
 
-/* fix container to the left */
 .left {
 left: 0;
 }
 
-/* fix container to the right */
 .right {
 left: 50%;
 }
 
-/* fix the circle for containers on the right side */
 .right::after {
 left: -15px;
 }
 /* end timeline css */
-
-@media screen and (max-width: 700px) {
-	img#gender {
-    display: none;
-	}
-}
+/* ----------end web page----------*/
